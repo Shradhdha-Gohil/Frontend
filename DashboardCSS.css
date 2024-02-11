@@ -1,0 +1,129 @@
+.dashcontainer {
+  background: #081e23;
+  padding: 20px;
+  top: 80px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  background: linear-gradient(to right ,#1d1d1b, #002235);
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+  width: 85vw;
+  position: relative;
+  font-family: monospace, 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-weight: 100;
+}
+
+
+h2{
+  color: #eec550;
+}
+.welcome {
+font-size: larger;
+
+}
+
+.fileSelect, .submit-button {
+  
+  width: auto;
+  background-color: #081e23;
+  color: #eec550;
+}
+
+.App{
+  color: aliceblue;
+}
+
+.dash {
+  text-align: center;
+}
+.mb-4 {
+  color: #f4cb83 !important;
+  height: auto;
+  padding-bottom: 2em;
+  
+}
+
+.logout {
+  background-color:#081e23;
+  color: white;
+  padding: 1% 1.5%;
+  font-size: small;
+  border: dashed 2px #f4cb83;
+  border-radius: 2em;
+  float: right;
+  
+}
+.logout:hover {
+  background-color:#f4cb83;
+  color: #081e23;
+  padding: 1% 1.5%;
+  border: solid 2px ;
+}
+.uploadbtn {
+  background-color: #081e23;
+  color: white;
+  
+  border: dashed 2px #f4cb83;
+  border-radius: 2em;
+}
+.uploadbtn:hover {
+  background-color:#f4cb83;
+  color: #081e23;
+  padding: 1%;
+  border: solid 2px ;
+}
+
+.dashcontainer h1,
+.dashcontainer p {
+  color: #f4cb83 ;
+}
+
+.testCard {
+  /*background-color: #081e23;*/
+  height: auto;
+  padding: 3em;
+  margin: 2em;
+  /*border: dashed 2px #f4cb83;*/
+  border-radius: 2%;
+  box-shadow: inset 0 0 2em black;
+}
+
+
+/*.submit-button, */
+
+/* .table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+} */
+
+
+ /* .dashcontainer {
+  overflow-x: auto; 
+  margin: 0 auto; 
+  max-width: 100%; 
+}
+
+table {
+  width: auto;
+  min-width: 100%; 
+  border-collapse: collapse;
+  table-layout: auto; 
+}  */
+
+
