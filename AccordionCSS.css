@@ -1,0 +1,73 @@
+
+/* File: src/App.css */
+.accordion-button {
+  
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid black;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+  transition: background-color 4.0s ease;
+  border-bottom: 2px solid #ddd;
+}
+.accordion-button{
+  background-color: aliceblue;
+  border: 5px solid white;
+}
+
+.individual {
+  color: white;
+  padding: 1em;
+}
+
+.accordion-button:hover, .accordion-button:focus {
+  background-color: white;
+}
+
+.accordion-content {
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  
+  width: 95%;
+  align-items: center;
+}
+
+.accordion-content table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.accordion-content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  
+}
+
+.accordion-box {
+   /* Set the background color to white */
+  border: 1px solid #eec550;
+  border-radius: 9px;
+  overflow: hidden;
+  margin: 1em;
+  padding: 1em;
+}
+
+.accordion-box:hover{
+  background-color: #eec550; /* Set the background color to white */
+  border: 1px solid #081e23;
+  border-radius: 5px;
+  overflow: hidden;
+  color: #081e23;
+}
+
+.accordion-button.clicked {
+  background-color: #081e23;
+  color: #eec550;
+}
+
+/*  */
+
