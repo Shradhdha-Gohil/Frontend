@@ -1,0 +1,225 @@
+/* UploadPage.css */
+body{
+  
+ 
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.upload-container {
+  background-image:url('../../assets/bg.gif'); 
+ /* background: linear-gradient(to right ,#1d1d1b, #002235)!important; */
+ margin-top: 5%;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ font-family: 'Poppins', sans-serif;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size:cover;
+ width: 100vw;
+ height: 100vh; /* Use full viewport height */
+ padding-top: 50px; 
+ 
+}
+
+.dropzone {
+  width: 500px;
+  height: 350px;
+  margin-bottom: 10% !important;
+  display: flex;
+  border-radius: 20px; /* Adjust for desired roundness */
+  border: 4px dashed #f4cb83; /* Dotted border with specified color */
+  background-color: transparent; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Outer shadow */
+              0 6px 20px rgba(0, 0, 0, 0.19); /* Inner depth */
+  flex-direction: column;
+  flex: 1;
+  max-width: calc(50% - 10px);
+  justify-content: center;
+  align-items: center;
+  font-size: 100px !important;
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  /* Light background color */
+  color: #d8d1d1; /* Primary text color */
+  margin-bottom: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+/* Ensure your text styles align with the desired layout */
+.dropzone p {
+  font-size: 18px;
+  /* font-weight: bolder ; Adjust according to typography guidelines */
+  font-family: 'Poppins', sans-serif;
+  /* font-weight:bolder !important; */
+ 
+}
+/* Assuming your previous CSS, add or modify: */
+
+.dropzone {
+  transition: transform 0.5s ease-in-out;
+}
+
+.dropzone-left {
+  transform: translateX(-50%); /* Adjust based on your layout */
+}
+
+.dropzone-right {
+  /* Ensure it matches the first dropzone but positions on the right */
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1; /* You can animate this for a smoother appearance */
+}
+
+/* Adjust the center-dropzone-button style if needed */
+.center-dropzone-button {
+  position: absolute;
+  right: -25px; /* Adjust based on the new layout */
+  top: 50%;
+  /* Other styles remain unchanged */
+}
+
+
+.fontp{
+  font-family: 'Poppins', sans-serif !important;
+  margin-top: 10px;
+}
+
+.dropzone.active {
+  background-color: #c4e3f8; /* Lighter shade for active state */
+  border-color: #00576b; /* Darker shade for active border */
+ 
+}
+
+
+
+.preview {
+  justify-content: center; /* Centers the preview images horizontally */
+  align-items: center;
+ /* Ensures there's a 10px margin from the upload container */
+  flex-wrap: wrap;
+  flex: 1;
+  display: flex;
+  max-width: calc(50% - 10px);
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 100%;
+ /* Provides spacing around each image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto; /* Center the preview card in the container */
+  overflow: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+  transform: scale(1);
+  
+
+}
+
+.preview-image img {
+ 
+  object-fit: contain; 
+  display: block;
+  max-width: 300px !important;
+  max-height: 300px !important; /* Adjust based on your requirements */
+  margin: auto;
+}
+
+.preview-image.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.button-group {
+  display: flex;
+  justify-content: center; /* Centers the buttons in the container */
+  gap: 20px; /* This creates space between the buttons */
+}
+.submit-button {
+  margin-top: 15px !important;
+  padding: 10px 20px;
+  width: 200px; /* Set a specific width */
+  border: none;
+  border-radius: 5px;
+  background-color: #002235;
+  color: white;
+  cursor: pointer;
+  display: flex !important; /* Ensures width takes effect */
+  margin-left: auto;
+  margin-right: auto; /* Centers the button */
+}
+
+.submit-button{
+  padding: 1rem 2rem;
+  margin: 0; /* Remove any margins from the individual buttons */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  border: 2px dashed #f4cb83;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  display: flex;
+  justify-content: center; /* This will center the buttons in the container */
+  
+  gap: 20px;
+}
+.submit-button .submit-button::after {
+  /* Arrow styling */
+
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+}
+
+.submit-button.submit-button:hover {
+  background-color: #f4cb83;
+  color: #081e23;
+}
+
+.submit-button .submit-button:hover::after {
+  right: 1.5rem;
+}
+.footer { /* Update this selector to target your specific Footer component */
+  width: 100%; /* Full width of the viewport */
+  /* ... other styles ... */
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0; /* Remove padding if previously set */
+  padding-right: 0; /* Remove padding if previously set */
+}
+
+.App {
+  height: auto;
+  background: #081e23;
+  padding: 5vw;
+  color: white;
+  
+  background: linear-gradient(to right ,#1d1d1b, #002235);
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
+  width: 100vw;
+  position: relative;
+  font-family: monospace, 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-weight: 100;
+}
+.Appcontent {
+  width: 85vw;
+}
+
